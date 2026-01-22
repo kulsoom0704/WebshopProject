@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">Kay Beauty</a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <input type="text" placeholder="Search..." class="search-bar">
+      <span class="cart">🛒</span>
+    </div>
+  </nav>
+  <section class="product-details">
+
+    <div class="product-layout">
+
+      <div class="product-image">
+        <img id="product-img" src="" alt="Product image">
+      </div>
+
+      <div class="product-info">
+        <h1 id="product-title"></h1>
+        <p id="product-desc"></p>
+        <p class="price" id="product-price"></p>
+        <button class="btn cart-btn">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    const products = {
+      "lipstick-matte": {
+        title: "Long-lasting Matte Lipstick",
+        description: "Matte lipstick providing long-lasting color with a comfortable application.",
+        price: "€24.99",
+        image: "img/mattelipstick.jpg"
+      },
+
+      "lipstick-shine": {
+        title: "Long-lasting Shine Lipstick",
+        description: "Creamy lipstick offering consistent color payoff and smooth wear.",
+        price: "€29.99",
+        image: "img/creamlipstick.jpg"
+      },
+
+      "foundation-matte": {
+        title: "Lightweight Matte Foundation",
+        description: "Lightweight matte foundation designed to provide an even skin tone with a long-lasting natural finish.",
+        price: "€49.99",
+        image: "img/mattefoundation.jpg"
+      },
+
+      "foundation-glow": {
+        title: "Lightweight Glow Foundation",
+        description: "Buildable foundation offering lightweight coverage while maintaining comfort throughout the day.",
+        price: "€54.99",
+        image: "img/glowfoundation.jpg"
+      },
+
+      "eyeshadow-nude": {
+        title: "Nude Shimmer Eyeshadow Palette",
+        description: "Soft nude shimmery eyeshadow palette for natural glam looks.",
+        price: "€35.99",
+        image: "img/nudeeyeshadow.jpg"
+      },
+
+      "eyeshadow-soft-glam": {
+        title: "Soft Glam Eyeshadow Palette",
+        description: "Blendable eyeshadow shades suitable for everyday makeup looks.",
+        price: "€39.99",
+        image: "img/softglameyeshadow.jpg"
+      },
+
+      "blush-powder": {
+        title: "Powder Blush Palette",
+        description: "Smooth-textured blush that enhances facial features with a balanced finish.",
+        price: "€37.99",
+        image: "img/powderblush.jpg"
+      },
+
+      "blush-creme": {
+        title: "Creme Blush Palette",
+        description: "Silky blush formulated to add a natural-looking flush to the cheeks.",
+        price: "€60.99",
+        image: "img/cremeblush.jpg"
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const key = params.get("product");
+
+    if (products[key]) {
+      document.getElementById("product-title").textContent = products[key].title;
+      document.getElementById("product-desc").textContent = products[key].description;
+      document.getElementById("product-price").textContent = products[key].price;
+      document.getElementById("product-img").src = products[key].image;
+    }
+  </script>
+</body>
+
+</html>

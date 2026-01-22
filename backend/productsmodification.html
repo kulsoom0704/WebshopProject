@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+
+    <!-- Shared admin stylesheet -->
+    <link rel="stylesheet" href="adminstyle.css">
+</head>
+
+<body>
+
+    <!-- Admin dashboard structure (sidebar + main content) -->
+    <div class="admin-wrapper">
+
+        <!-- Admin navigation -->
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <nav>
+                <a href="adminindex.html">💄 Products</a>
+                <a href="productsmodification.html" class="active">➕ Add Product</a>
+                <a href="login.html" class="logout">🚪 LogOut</a>
+            </nav>
+        </aside>
+
+        <!-- Main page content -->
+        <main class="main-content">
+            <h1>Add New Product</h1>
+
+            <!-- Add product form (HTML only – no backend) -->
+            <form class="admin-form" action="adminindex.html">
+
+                <!-- Row: product name + category -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Product Name</label>
+                        <input type="text" placeholder="e.g. Matte Nude Lipstick" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Category</label>
+                        <select required>
+                            <option value="">Select category</option>
+                            <option>Foundation</option>
+                            <option>Blush</option>
+                            <option>Lipstick</option>
+                            <option>Eyeshadow</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Row: price + stock -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Price (€)</label>
+                        <input type="number" step="0.01" placeholder="e.g. 19.99" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Stock Quantity</label>
+                        <input type="number" placeholder="e.g. 25" required>
+                    </div>
+                </div>
+
+                <!-- Image upload -->
+                <div class="form-group">
+                    <label>Product Image</label>
+                    <input type="file" accept="image/*" required>
+                </div>
+
+                <!-- Product description -->
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea placeholder="Short description of the product..."></textarea>
+                </div>
+
+                <!-- Submit button -->
+                <button class="btn-admin">Save Product</button>
+
+            </form>
+        </main>
+
+    </div>
+
+</body>
+</html>

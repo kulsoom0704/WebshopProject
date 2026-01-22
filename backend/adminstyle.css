@@ -1,0 +1,134 @@
+
+.login-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f381a1, #fce4ec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-wrapper {
+    text-align: center;
+}
+.login-title {
+    margin-bottom: 25px;
+    color: pink;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+}
+.login-box {
+    background: white;
+    padding: 35px;
+    width: 360px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #6a1b9a;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.btn-admin {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-admin:hover {
+    background-color: #8e24aa;
+}
+.back-link {
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f6f8;
+}
+.sidebar {
+    width: 240px;
+    background-color: #410324;
+    color: white;
+    padding: 20px;
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sidebar nav a {
+    display: block;
+    color: coral;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+.sidebar nav a:hover {
+    background-color: #8e24aa;
+    color: white;
+}
+.sidebar .logout {
+    margin-top: 30px;
+    color: #ff7675;
+}
+.main-content {
+    flex: 1;
+    padding: 40px;
+}
+.main-content h1 {
+    margin-bottom: 20px;
+}
+.add-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    background-color: #8e24aa;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.product-table th,
+.product-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+.product-table th {
+    background-color: #f1f1f1;
+}
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: white;
+}
+.in-stock {
+    background-color: blue;
+}
+.low-stock {
+    background-color: orangered;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Product Management</title>
+    <link rel="stylesheet" href="adminstyle.css">
+</head>
+<body>
+
+<div class="admin-wrapper">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Admin Panel</h2>
+        <nav>
+            <a href="adminindex.html" class="active">💄 Products</a>
+            <a href="#">⚙️ Settings</a>
+            <a href="login.html" class="logout">🚀 LogOut</a>
+        </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+
+        <div class="header-flex">
+            <h1>Product Inventory (8 items)</h1>
+        </div>
+
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <!-- Foundations -->
+                <tr>
+                    <td>#1</td>
+                    <td>Lightweight Matte Foundation</td>
+                    <td>Foundation</td>
+                    <td>€ 49.99</td>
+                    <td>20</td>
+                    <td><span class="status in-stock">In stock</span></td>
+                    <td>
+                        <a class="action-btn edit">💻</a>
+                        <a class="action-btn delete">🗑️</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#2</td>
+                    <td>Lightweight Glow Foundation</td>
+                    <td>Foundation</td>
+                    <td>€ 54.99</td>
+                    <td>5</td>
+                    <td><span class="status low-stock">Low stock</span></td>
+                    <td>
+                        <a class="action-btn edit">💻</a>
+                        <a class="action-btn delete">🗑️</a>
+                    </td>
+                </tr>
+
+                <!-- Blushes -->
+                <tr>
+                    <td>#3</td>
+                    <td>Powder Blush Palette</td>
+                    <td>Blush</td>
+                    <td>€ 37.99</td>
+                    <td>35</td>
+                    <td><span class="status in-stock">In stock</span></td>
+                    <td>
+                        <a class="action-btn edit">💻</a>
+                        <a class="action-btn delete">🗑️</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#4</td>
+                    <td>Creme Blush Palette</td>
+                    <td>Blush</td>
+                    <td>€ 60.99</td>
+                    <td>8</td>
+                    <td><span class="status low-stock">Low stock</span></td>
+                    <td>
+                        <a class="action-btn edit">💻</a>
+                        <a class="action-btn delete">🗑️</a>
+                    </td>
+                </tr>
+
+                <!-- Lipsticks -->
+                <tr>
+                    <td>#5</td>
+                    <td>Long lasting MatteLipstick</td>
+                    <td>Lipstick</td>
+                    <td>€ 24.99</td>
+                    <td>60</td>
+                    <td><span class="status in-stock">In stock</span></td>
+                    <td>
+                        <a class="action-btn edit">💻</a>
+                        <a class="action-btn delete">🗑️</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#6</td>
+                    <td>Long lasting shine Lipstick</td>
+                    <td>Lipstick</td>
+                    <td>€ 29.99</td>
+                    <td>12</td>
+                    <td><span class="status low-stock">Low stock</span></td>
+                    <td>
+                        <a class="action-btn edit">💻</a>
+                        <a class="action-btn delete">🗑️</a>
+                    </td>
+                </tr>
+
+                <!-- Eyeshadows -->
+                <tr>
+                    <td>#7</td>
+                    <td>Shimmery Eyeshadow Palette</td>
+                    <td>Eyeshadow</td>
+                    <td>€ 35.99</td>
+                    <td>30</td>
+                    <td><span class="status in-stock">In stock</span></td>
+                    <td>
+                        <a class="action-btn edit">💻</a>
+                        <a class="action-btn delete">🗑️</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#8</td>
+                    <td>Soft Glam Eyeshadow Palette</td>
+                    <td>Eyeshadow</td>
+                    <td>€ 39.99</td>
+                    <td>9</td>
+                    <td><span class="status low-stock">Low stock</span></td>
+                    <td>
+                        <a class="action-btn edit">💻</a>
+                        <a class="action-btn delete">🗑️</a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <a href="productsmodification.html" class="btn-admin" style="width:auto; padding:10px 20px;">
+                + Add New Product
+            </a>
+
+    </main>
+</div>
+
+</body>
+</html>
