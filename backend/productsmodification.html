@@ -24,15 +24,11 @@
                 <a href="login.html" class="logout">🚪 LogOut</a>
             </nav>
         </aside>
-
-        <!-- Main page content -->
         <main class="main-content">
             <h1>Add New Product</h1>
 
-            <!-- Add product form (HTML only – no backend) -->
             <form class="admin-form" action="adminindex.html">
 
-                <!-- Row: product name + category -->
                 <div class="form-row">
                     <div class="form-group">
                         <label>Product Name</label>
@@ -51,7 +47,6 @@
                     </div>
                 </div>
 
-                <!-- Row: price + stock -->
                 <div class="form-row">
                     <div class="form-group">
                         <label>Price (€)</label>
@@ -64,19 +59,16 @@
                     </div>
                 </div>
 
-                <!-- Image upload -->
                 <div class="form-group">
                     <label>Product Image</label>
                     <input type="file" accept="image/*" required>
                 </div>
 
-                <!-- Product description -->
                 <div class="form-group">
                     <label>Description</label>
                     <textarea placeholder="Short description of the product..."></textarea>
                 </div>
 
-                <!-- Submit button -->
                 <button class="btn-admin">Save Product</button>
 
             </form>

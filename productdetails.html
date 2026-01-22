@@ -7,6 +7,10 @@
   <title>Product Details</title>
   <link rel="stylesheet" href="style.css">
 
+
+<!-- This page serves as a dynamic template that displays specific product information based on data passed through the URL.
+ Instead of creating a separate HTML file for every item, 
+ this single file updates its content automatically using JavaScript. the Idea to use javascript was taken from OpenAI. -->
 </head>
 
 <body>
@@ -44,6 +48,13 @@
 
     </div>
   </section>
+
+  <!-- This script provides the functionality for a dynamic product page.
+   It allows a single HTML file to display various products 
+   by retrieving data based on a unique identifier passed in the URL. -->
+
+
+
 
   <script>
     const products = {
@@ -104,6 +115,11 @@
       }
     };
 
+    //<!-- Retrieve the product identifier from the URL parameters -->
+    //It uses URLSearchParams, a built-in JavaScript feature that reads the query string — the part of the URL that comes after the ?.
+    //The script specifically looks for the value linked to the product parameter (?product=).
+
+    
     const params = new URLSearchParams(window.location.search);
     const key = params.get("product");
 
@@ -115,5 +131,4 @@
     }
   </script>
 </body>
-
 </html>

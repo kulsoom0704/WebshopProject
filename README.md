@@ -48,7 +48,7 @@ Cleaned up and organized the code
 Total time spent: ±25 hours
 
 External Tools:-
-Chatgpt is used to give better ideas 
+OpenAI is used to give better ideas 
 modify and correct sytax and common error
 and the given below link for emojies.
 https://www.w3schools.com/html/html_emojis.asp 
