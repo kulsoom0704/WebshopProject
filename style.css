@@ -29,8 +29,6 @@ h2 {
   font-size: 25px;
   margin-top: 10px;
 }
-
-/* NAVIGATION BAR */
 .navbar {
   display: flex;
   align-items: center;
@@ -42,8 +40,6 @@ h2 {
   z-index: 1000;
   backdrop-filter: blur(50px);
 }
-
-/* LOGO */
 .logo a {
   font-size: 26px;
   font-weight: bold;
@@ -51,8 +47,6 @@ h2 {
   text-decoration: none;
   font-style: italic;
 }
-
-/* NAV LINKS */
 .nav-links {
   list-style: none;
   display: flex;
@@ -71,8 +65,6 @@ h2 {
 .nav-links a:hover {
   color: black;
 }
-
-/* RIGHT SIDE */
 .nav-right {
   display: flex;
   align-items: center;
@@ -94,16 +86,12 @@ h2 {
   font-weight: 500;
   margin: 10px 10%;
 }
-
-/* SEARCH BAR */
 .search-bar {
   padding: 7px 14px;
   border-radius: 20px;
   border: 1px solid black;
   outline: none;
 }
-
-/* CART ICON */
 .cart {
   font-size: 22px;
   cursor: pointer;
@@ -113,7 +101,6 @@ h2 {
 .products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* 👈 TWO columns */
   gap: 40px;
   padding: 40px 8%;
   grid-column: auto;
@@ -180,15 +167,12 @@ p {
   transition: all 0.3s ease;
 }
 
-/* See Details button – aesthetic */
 .details-btn {
   background: linear-gradient(135deg, #f8c1d9, #f4a6c5);
   color: #7a2356;
   border: none;
   box-shadow: 0 4px 10px rgba(201, 76, 138, 0.25);
 }
-
-/* Hover effect */
 .details-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(201, 76, 138, 0.35);
@@ -295,22 +279,24 @@ p {
 }
 
 .hero-image {
-  width: 50%;
-  max-width: 480px;
+  margin: 0;
+  width: 100%;
+  max-width: 320px;
   height: 100%;
   background-size: 20%;
   background-repeat: no-repeat;
   border-collapse: collapse;
+
 }
 .hero-small {
   margin-bottom: 10px;
-  font-size: 50px;
+  font-size: 30px;
   text-align: left;
   color: black;
 }
 .tagline {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   color: black;
 }
 .why-kay {
@@ -344,7 +330,7 @@ p {
 }
 .product-details img {
   width: 100%;
-  height: auto;        /* 👈 allow image to expand */
-  max-height: none;   /* 👈 remove limits */
+  height: auto;        
+  max-height: none;   
   object-fit: contain;
 }

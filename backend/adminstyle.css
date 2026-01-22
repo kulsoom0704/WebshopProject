@@ -132,3 +132,10 @@
 .low-stock {
     background-color: orangered;
 }
+textarea {
+  width: 100%;
+  min-height: 140px;   
+  padding: 12px;
+  font-size: 15px;
+  resize: vertical;  
+}
