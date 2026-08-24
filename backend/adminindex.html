@@ -56,8 +56,10 @@
                     <td>20</td>
                     <td><span class="status in-stock">In stock</span></td>
                     <td>
-                        <a class="action-btn edit">💻</a>
-                        <a class="action-btn delete">🗑️</a>
+                        <a href="productsmodification.html" class="action-btn edit">✏️</a>
+                        <button class="action-btn delete" onclick="deleteProduct(this)">
+    🗑️
+</button>
                     </td>
                 </tr>
 
@@ -69,8 +71,10 @@
                     <td>5</td>
                     <td><span class="status low-stock">Low stock</span></td>
                     <td>
-                        <a class="action-btn edit">💻</a>
-                        <a class="action-btn delete">🗑️</a>
+                        <a href="productsmodification.html" class="action-btn edit">✏️</a>
+                        <button class="action-btn delete" onclick="deleteProduct(this)">
+    🗑️
+</button>
                     </td>
                 </tr>
 
@@ -83,8 +87,10 @@
                     <td>35</td>
                     <td><span class="status in-stock">In stock</span></td>
                     <td>
-                        <a class="action-btn edit">💻</a>
-                        <a class="action-btn delete">🗑️</a>
+                        <a href="productsmodification.html" class="action-btn edit">✏️</a>
+                        <button class="action-btn delete" onclick="deleteProduct(this)">
+    🗑️
+</button>
                     </td>
                 </tr>
 
@@ -96,8 +102,10 @@
                     <td>8</td>
                     <td><span class="status low-stock">Low stock</span></td>
                     <td>
-                        <a class="action-btn edit">💻</a>
-                        <a class="action-btn delete">🗑️</a>
+                        <a href="productsmodification.html" class="action-btn edit">✏️</a>
+                        <button class="action-btn delete" onclick="deleteProduct(this)">
+    🗑️
+</button>
                     </td>
                 </tr>
 
@@ -110,8 +118,10 @@
                     <td>60</td>
                     <td><span class="status in-stock">In stock</span></td>
                     <td>
-                        <a class="action-btn edit">💻</a>
-                        <a class="action-btn delete">🗑️</a>
+                        <a href="productsmodification.html" class="action-btn edit">✏️</a>
+                        <button class="action-btn delete" onclick="deleteProduct(this)">
+    🗑️
+</button>
                     </td>
                 </tr>
 
@@ -123,8 +133,10 @@
                     <td>12</td>
                     <td><span class="status low-stock">Low stock</span></td>
                     <td>
-                        <a class="action-btn edit">💻</a>
-                        <a class="action-btn delete">🗑️</a>
+                        <a href="productsmodification.html" class="action-btn edit">✏️</a>
+                        <button class="action-btn delete" onclick="deleteProduct(this)">
+    🗑️
+</button>
                     </td>
                 </tr>
 
@@ -137,8 +149,10 @@
                     <td>30</td>
                     <td><span class="status in-stock">In stock</span></td>
                     <td>
-                        <a class="action-btn edit">💻</a>
-                        <a class="action-btn delete">🗑️</a>
+                        <a href="productsmodification.html" class="action-btn edit">✏️</a>
+                        <button class="action-btn delete" onclick="deleteProduct(this)">
+    🗑️
+</button>
                     </td>
                 </tr>
 
@@ -150,8 +164,10 @@
                     <td>9</td>
                     <td><span class="status low-stock">Low stock</span></td>
                     <td>
-                        <a class="action-btn edit">💻</a>
-                        <a class="action-btn delete">🗑️</a>
+                        <a href="productsmodification.html" class="action-btn edit">✏️</a>
+                        <button class="action-btn delete" onclick="deleteProduct(this)">
+    🗑️
+</button>
                     </td>
                 </tr>
 
@@ -160,6 +176,20 @@
 
     </main>
 </div>
+<script>
+    function deleteProduct(button) {
+        const row = button.closest("tr");
 
+        const productName = row.cells[1].textContent;
+
+        const confirmDelete = confirm(
+            "Are you sure you want to remove " + productName + "?"
+        );
+
+        if (confirmDelete) {
+            row.remove();
+        }
+    }
+</script>
 </body>
 </html>
