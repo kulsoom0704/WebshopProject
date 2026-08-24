@@ -1,9 +1,9 @@
 # WebshopProject
-Project Overview:-
+## Project Overview:-
 This project is a webshop website developed as part of my programming coursework.
 The goal was to design and build a functional and visually appealing webshop using HTML and CSS, focusing on clean structure, usability, and responsive design.
 
-The webshop includes:-
+## The webshop includes:-
 A homepage
 Navigation menu available on all pages
 Product listing
@@ -12,12 +12,12 @@ Basic frontend and backend structure logic
 Consistent styling and layout
 This project helped me practice structuring a website, debugging code, and improving my problem-solving skills.
 
-Technologies Used:-
+## Technologies Used:-
 HTML5
 CSS3
 Basic project structuring (folders, files)
 
-Features:-
+## Features:-
 Responsive layout that adapts to screen size
 Fixed navigation bar for easy page access
 Product list with “See Details” pages
@@ -25,7 +25,7 @@ Styled branding (logo, colors, borders)
 Clean and readable code structure
 
 
-Planning & Time Management:-
+## Planning & Time Management:-
 Monday – ±5 hours
 Planned the webshop concept
 Set up the project folder structure
