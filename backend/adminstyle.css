@@ -209,6 +209,7 @@ textarea {
 
 .header-flex h1 {
     margin: 0;
+    flex-shrink: 0;
 }
 
 .header-flex .btn-admin {
@@ -217,6 +218,31 @@ textarea {
     margin: 0;
     white-space: nowrap;
     text-decoration: none;
+}
+.inventory-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.inventory-search {
+    display: flex;
+    align-items: center;
+}
+
+.inventory-search input {
+    width: 220px;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.inventory-search input:focus {
+    border-color: #8e24aa;
 }
 
 
@@ -368,4 +394,17 @@ textarea {
     width: 18px;
     height: 18px;
     cursor: pointer;
+}
+.header-flex {
+    flex-wrap: wrap;
+}
+
+.inventory-actions {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0;
+}
+
+.inventory-search input {
+    width: 180px;
 }
