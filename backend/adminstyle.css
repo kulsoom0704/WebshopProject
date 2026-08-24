@@ -1,14 +1,33 @@
-
 .login-container {
     min-height: 100vh;
     background: linear-gradient(135deg, #f381a1, #fce4ec);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-.login-wrapper {
-    text-align: center;
+.back-link {
+    text-align: left;
+    margin: 0 0 15px 0;
 }
+.back-link a {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #fce4ec;
+    border: 1px solid #d8a0bd;
+    border-radius: 8px;
+    color: #6a1b9a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.back-link a:hover {
+    background-color: #6a1b9a;
+    color: white;
+}
+
 .login-title {
     margin-bottom: 25px;
     color: pink;
@@ -35,8 +54,41 @@
 .form-group input {
     width: 100%;
     padding: 10px;
+    box-sizing: border-box;
     border-radius: 6px;
     border: 1px solid #ccc;
+}
+.back-link {
+    text-align: left;
+    margin: 0 0 20px 0;
+    font-size: 0.9rem;
+}
+
+.back-link a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link a:hover {
+    color: #8e24aa;
+    text-decoration: underline;
+}
+
+.forgot-password {
+    text-align: left;
+    margin-top: 18px;
+    font-size: 0.9rem;
+}
+
+.forgot-password a {
+    color: #6a1b9a;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    color: #8e24aa;
+    text-decoration: underline;
 }
 .btn-admin {
     width: 100%;
@@ -138,4 +190,170 @@ textarea {
   padding: 12px;
   font-size: 15px;
   resize: vertical;  
+}
+.back-link {
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+/* ============================= */
+/* INVENTORY HEADER               */
+/* ============================= */
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.header-flex h1 {
+    margin: 0;
+}
+
+.header-flex .btn-admin {
+    width: auto;
+    padding: 10px 20px;
+    margin: 0;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+
+/* ============================= */
+/* TABLET / MOBILE RESPONSIVE    */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* ADMIN LAYOUT */
+    .admin-wrapper {
+        display: block;
+    }
+
+    /* TOP ADMIN NAVIGATION */
+    .sidebar {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 20px;
+    }
+
+    .sidebar h2 {
+        text-align: center;
+        margin: 0 0 15px 0;
+        font-size: 28px;
+    }
+
+    .sidebar nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sidebar nav a {
+        width: 150px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 10px 15px;
+        text-align: left;
+    }
+    /* Remove the desktop logout spacing on mobile */
+    .sidebar .logout {
+        margin-top: 0;
+    }
+
+
+    /* MAIN CONTENT */
+    .main-content {
+        padding: 25px 10px;
+        overflow-x: hidden;
+    }
+
+
+    /* INVENTORY TITLE + ADD BUTTON */
+    .header-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .header-flex h1 {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .header-flex .btn-admin {
+        flex-shrink: 0;
+        width: auto;
+        padding: 10px 15px;
+        font-size: 14px;
+        margin: 0;
+    }
+
+
+    /* TABLE */
+    .product-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .product-table th,
+    .product-table td {
+        padding: 14px;
+    }
+
+
+    /* PRODUCT NAME */
+    .product-table th:nth-child(2),
+    .product-table td:nth-child(2) {
+        min-width: 180px;
+        white-space: normal;
+    }
+
+
+    /* CATEGORY */
+    .product-table th:nth-child(3),
+    .product-table td:nth-child(3) {
+        min-width: 110px;
+    }
+
+
+    /* PRICE */
+    .product-table th:nth-child(4),
+    .product-table td:nth-child(4) {
+        min-width: 90px;
+        white-space: nowrap;
+    }
+
+
+    /* STOCK */
+    .product-table th:nth-child(5),
+    .product-table td:nth-child(5) {
+        min-width: 70px;
+    }
+
+
+    /* STATUS */
+    .product-table th:nth-child(6),
+    .product-table td:nth-child(6) {
+        min-width: 110px;
+    }
+
+
+    /* ACTIONS */
+    .product-table th:nth-child(7),
+    .product-table td:nth-child(7) {
+        min-width: 100px;
+        white-space: nowrap;
+    }
+
+    .status {
+        white-space: nowrap;
+    }
 }
