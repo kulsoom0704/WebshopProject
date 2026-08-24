@@ -87,10 +87,25 @@ h2 {
   margin: 10px 10%;
 }
 .search-bar {
-  padding: 7px 14px;
-  border-radius: 20px;
-  border: 1px solid black;
+  width: 200px;
+  padding: 10px 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   outline: none;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+
+.search-bar:focus {
+  border-color: #c94c8a;
+  box-shadow: 0 0 6px rgba(201, 76, 138, 0.25);
+}
+
+.search-bar::placeholder {
+  color: #777;
 }
 .cart {
   font-size: 22px;
